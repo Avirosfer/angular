@@ -1,0 +1,39 @@
+<h1>Hola, este es mi primer proyecto en Angular</h1>
+
+<h1>{{'Hola, este es mi primer proyecyo en Angular'. toUpperCase()}}</h1>
+<h2>1+1={{1+1}}</h2>
+
+<h3>Hola soy {{nombre}} y tengo {{edad}} años</h3>
+
+<h5>Aprendiz</h5>
+<h5>Id: {{aprendiz.getId()}}</h5>
+<h5>Nombre: {{aprendiz.getNombre()}}</h5>
+
+
+<h1>Propiedades - Property Binding</h1>
+
+<button [disabled]="btnDisabled">Enviar</button>
+<button (click)="cambiarEstadoBoton()">Cambiar Estado Boton Enviar</button>
+
+<h3>Nueva edad: {{edad}}</h3>
+<button (click)="aumentarEdad()">Cambiar Edad</button>
+
+<input type="text" [value]="nombre"><!--Cargar el input text a una variable-->
+<progress max="100" [value]="edad"></progress>
+
+<div class="box"(scroll)=onScroll($event)>
+  <p>
+      lorem ipsum dolor sit amet, consectetur adip
+      lorem ipsum dolor sit amet, consectetur adip
+      lorem ipsum dolor sit amet, consectetur adip
+      lorem ipsum dolor sit amet, consectetur adip
+      lorem ipsum dolor sit amet, consectetur adip
+      lorem ipsum dolor sit amet, consectetur adip
+      lorem ipsum dolor sit amet, consectetur adip
+      lorem ipsum dolor sit amet, consectetur adip
+      lorem ipsum dolor sit amet, consectetur adip
+  </p>
+</div>
+
+
+
