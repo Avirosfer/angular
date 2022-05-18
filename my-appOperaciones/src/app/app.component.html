@@ -1,12 +1,5 @@
-<h5>Operaciones</h5>
+<input type="text"[(ngModel)]="nombre" placeholder="Nombre">
 
-Número 1: <input type="number" (blur)="leerNum1($event)" placeholder="Ingrese numero 1">
-Número 2: <input type="number" (blur)="leerNum2($event)" placeholder="Ingrese numero 2">
-Resultado: <input type="number" [value]="ops.getResultado()" placeholder="Resultado" [disabled]="true">
+<p>Nombre: {{nombre}}</p>
 
-
-
-<button (click)="suma()">Sumar</button>
-<button (click)="resta()">RestRestar</button>
-<button (click)="multi()">Multiplicar</button>
-<button (click)="dvd()">Dividir</button>
+<button class="card card-small"
