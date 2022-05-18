@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'workshop';
- ;
+  condicion = true
+  Nombre = "Rokuro Okajima";
+  edad = 21;
+  img = "https://source.unplash.com/random";
+  aprendiz = new Aprendiz(100, "Revy Two Hands");
+  btnDisabled = true;
+
+  myArray: string[]= [
+    "George",
+    "Lewis",
+  ]
 }

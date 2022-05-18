@@ -25,3 +25,34 @@
   <input type="submit" value="Enviar">
   <input type="submit" value="Borrar">
 </p>
+
+<div *ngIf="condicion">
+    <p>Contenido para representar cuando la condición es verdadera: Primero</p>
+</div>
+
+<ng-template [ngIf]="condicion">
+  <p>Contenido para representar cuando la condición es verdadera: Segundo</p>
+</ng-template>
+
+<div *ngIf=condicion; else elseBlock1>
+    Contenido para representar cuando la condición es verdadera: Tercero
+</div>
+
+<div *ngIf="condicion">
+  <ng-template #elseBlock1>Contenido para representar cuando la condición es verdadera: Cuarto</ng-template>
+</div>
+
+<div *ngIf=condicion; then thenBlock else elseBlock2>
+  <ng-template #thenBlock>Contenido para representar cuando la condición es verdadera:Quinta</ng-template>
+  <ng-template #elseBlock2>Contenido para representar cuando la condición es FALSE</ng-template>
+</div>
+
+
+<h1>+ngFor</h1>
+<ul>
+  <li *ngFor="let dato of myArray">
+      {{dato}}
+  </li>
+</ul>
+
+
