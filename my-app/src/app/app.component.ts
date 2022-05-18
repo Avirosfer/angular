@@ -23,6 +23,11 @@ export class AppComponent {
     const elemento = event.target as HTMLElement;
     console.log(elemento.scrollTop);
   }
+  
+  cambioNombre(event: Event){
+    const elemento = event.target as HTMLInputElement;
+    this.nombre = elemento.value;
+  }
 }
 
 class Aprendiz{
@@ -36,3 +41,5 @@ class Aprendiz{
   getId():number {return this.id;}
   getNombre():string {return this.name;}
 }
+
+
