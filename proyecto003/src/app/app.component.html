@@ -1,0 +1,14 @@
+
+<div style="text-align:center">
+  <app-dado valor="{{valor1}}"></app-dado>
+  <app-dado valor="{{valor2}}"></app-dado>
+  <app-dado valor="{{valor3}}"></app-dado>
+
+  <hr>
+  <button [disabled]="lanzador" type="button"(click)="tirar()">Tirar</button>
+  <button (click)="enabledButtom()">Reiniciar</button>
+  <hr>
+  <p>Resultado:{{resultado}}</p>
+  <p>Intento:{{contador}}</p>
+
+</div>
